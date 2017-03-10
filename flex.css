@@ -1,0 +1,92 @@
+.flex, .fl {
+  display: flex;
+  /************
+    Alignment
+  ************/
+  /************
+    Child elements
+  ************/ }
+  .flex.inline, .fl.inline {
+    display: flex;
+    display: inline-flex; }
+  .flex.column, .fl.column {
+    display: flex;
+    flex-direction: column; }
+  .flex.wrap, .fl.wrap {
+    flex-wrap: wrap; }
+  .flex.t, .fl.t {
+    align-items: flex-start; }
+  .flex.m, .fl.m {
+    align-items: center; }
+  .flex.b, .fl.b {
+    align-items: flex-end; }
+  .flex.l, .fl.l {
+    justify-content: flex-end; }
+  .flex.c, .fl.c {
+    justify-content: center; }
+  .flex.r, .fl.r {
+    justify-content: flex-start; }
+  .flex.tl, .fl.tl {
+    align-items: flex-start;
+    justify-content: flex-start; }
+  .flex.tc, .fl.tc {
+    align-items: flex-start;
+    justify-content: center; }
+  .flex.tr, .fl.tr {
+    align-items: flex-start;
+    justify-content: flex-end; }
+  .flex.ml, .fl.ml {
+    align-items: center;
+    justify-content: flex-start; }
+  .flex.mc, .fl.mc {
+    align-items: center;
+    justify-content: center; }
+  .flex.mr, .fl.mr {
+    align-items: center;
+    justify-content: flex-end; }
+  .flex.bl, .fl.bl {
+    align-items: flex-end;
+    justify-content: flex-start; }
+  .flex.bc, .fl.bc {
+    align-items: flex-end;
+    justify-content: center; }
+  .flex.br, .fl.br {
+    align-items: flex-end;
+    justify-content: flex-end; }
+  .flex.tsb, .fl.tsb {
+    align-items: flex-start;
+    justify-content: space-between; }
+  .flex.tsa, .fl.tsa {
+    align-items: flex-start;
+    justify-content: space-around; }
+  .flex.msb, .fl.msb {
+    align-items: center;
+    justify-content: space-between; }
+  .flex.msa, .fl.msa {
+    align-items: center;
+    justify-content: space-around; }
+  .flex.bsb, .fl.bsb {
+    align-items: flex-end;
+    justify-content: space-between; }
+  .flex.bsa, .fl.bsa {
+    align-items: flex-end;
+    justify-content: space-around; }
+  .flex.spaced > *, .fl.spaced > * {
+    margin-left: 10px; }
+    .flex.spaced > *:last-child, .fl.spaced > *:last-child {
+      margin-left: 0; }
+  .flex.spaced.column > *, .fl.spaced.column > * {
+    margin-right: 0;
+    margin-bottom: 10px; }
+    .flex.spaced.column > *:last-child, .fl.spaced.column > *:last-child {
+      margin-bottom: 0; }
+  .flex .f1, .fl .f1 {
+    flex: 1; }
+  .flex .f2, .fl .f2 {
+    flex: 2; }
+  .flex .f3, .fl .f3 {
+    flex: 3; }
+  .flex .f4, .fl .f4 {
+    flex: 4; }
+
+/*# sourceMappingURL=flex.css.map */
