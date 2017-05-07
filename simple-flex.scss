@@ -1,16 +1,18 @@
-.flex, .fl {
+.sf {
   display: flex;
+
   &.inline {
-    display: flex;
     display: inline-flex;
   }
+
   &.column {
-    display: flex;
     flex-direction: column;
   }
+
   &.wrap {
     flex-wrap: wrap;
   }
+
 
   /************
     Alignment
@@ -36,12 +38,19 @@
   &.br {align-items: flex-end; justify-content: flex-end;}
 
   // Advanced combos
+  &.sb {justify-content: space-between;}
+  &.sa {justify-content: space-around;}
   &.tsb {align-items: flex-start; justify-content: space-between;}
   &.tsa {align-items: flex-start; justify-content: space-around;}
   &.msb {align-items: center; justify-content: space-between;}
   &.msa {align-items: center; justify-content: space-around;}
   &.bsb {align-items: flex-end; justify-content: space-between;}
   &.bsa {align-items: flex-end; justify-content: space-around;}
+
+
+  /************
+    Spaced elements
+  ************/
 
   &.spaced {
     > * {
@@ -51,9 +60,19 @@
       }
     }
 
+    &.rtl {
+      > * {
+        margin-left: 0;
+        margin-right: 10px;
+        &:last-child {
+          margin-left: 0;
+        }
+      }
+    }
+
     &.column {
       > * {
-        margin-right: 0;
+        margin-left: 0;
         margin-bottom: 10px;
         &:last-child {
           margin-bottom: 0;
@@ -62,11 +81,13 @@
     }
   }
 
+
   /************
-    Child elements
+    columns
   ************/
-  .f1 {flex:1;}
-  .f2 {flex:2;}
-  .f3 {flex:3;}
-  .f4 {flex:4;}
+  @for $i from 1 through 12 {
+    .c#{$i} {
+      flex: $i;
+    }
+  }
 }

@@ -1,92 +1,118 @@
-.flex, .fl {
+.sf {
   display: flex;
   /************
     Alignment
   ************/
   /************
-    Child elements
+    Spaced elements
+  ************/
+  /************
+    columns
   ************/ }
-  .flex.inline, .fl.inline {
-    display: flex;
+  .sf.inline {
     display: inline-flex; }
-  .flex.column, .fl.column {
-    display: flex;
+  .sf.column {
     flex-direction: column; }
-  .flex.wrap, .fl.wrap {
+  .sf.wrap {
     flex-wrap: wrap; }
-  .flex.t, .fl.t {
+  .sf.t {
     align-items: flex-start; }
-  .flex.m, .fl.m {
+  .sf.m {
     align-items: center; }
-  .flex.b, .fl.b {
+  .sf.b {
     align-items: flex-end; }
-  .flex.l, .fl.l {
+  .sf.l {
     justify-content: flex-end; }
-  .flex.c, .fl.c {
+  .sf.c {
     justify-content: center; }
-  .flex.r, .fl.r {
+  .sf.r {
     justify-content: flex-start; }
-  .flex.tl, .fl.tl {
+  .sf.tl {
     align-items: flex-start;
     justify-content: flex-start; }
-  .flex.tc, .fl.tc {
+  .sf.tc {
     align-items: flex-start;
     justify-content: center; }
-  .flex.tr, .fl.tr {
+  .sf.tr {
     align-items: flex-start;
     justify-content: flex-end; }
-  .flex.ml, .fl.ml {
+  .sf.ml {
     align-items: center;
     justify-content: flex-start; }
-  .flex.mc, .fl.mc {
+  .sf.mc {
     align-items: center;
     justify-content: center; }
-  .flex.mr, .fl.mr {
+  .sf.mr {
     align-items: center;
     justify-content: flex-end; }
-  .flex.bl, .fl.bl {
+  .sf.bl {
     align-items: flex-end;
     justify-content: flex-start; }
-  .flex.bc, .fl.bc {
+  .sf.bc {
     align-items: flex-end;
     justify-content: center; }
-  .flex.br, .fl.br {
+  .sf.br {
     align-items: flex-end;
     justify-content: flex-end; }
-  .flex.tsb, .fl.tsb {
+  .sf.sb {
+    justify-content: space-between; }
+  .sf.sa {
+    justify-content: space-around; }
+  .sf.tsb {
     align-items: flex-start;
     justify-content: space-between; }
-  .flex.tsa, .fl.tsa {
+  .sf.tsa {
     align-items: flex-start;
     justify-content: space-around; }
-  .flex.msb, .fl.msb {
+  .sf.msb {
     align-items: center;
     justify-content: space-between; }
-  .flex.msa, .fl.msa {
+  .sf.msa {
     align-items: center;
     justify-content: space-around; }
-  .flex.bsb, .fl.bsb {
+  .sf.bsb {
     align-items: flex-end;
     justify-content: space-between; }
-  .flex.bsa, .fl.bsa {
+  .sf.bsa {
     align-items: flex-end;
     justify-content: space-around; }
-  .flex.spaced > *, .fl.spaced > * {
+  .sf.spaced > * {
     margin-left: 10px; }
-    .flex.spaced > *:last-child, .fl.spaced > *:last-child {
+    .sf.spaced > *:last-child {
       margin-left: 0; }
-  .flex.spaced.column > *, .fl.spaced.column > * {
-    margin-right: 0;
+  .sf.spaced.rtl > * {
+    margin-left: 0;
+    margin-right: 10px; }
+    .sf.spaced.rtl > *:last-child {
+      margin-left: 0; }
+  .sf.spaced.column > * {
+    margin-left: 0;
     margin-bottom: 10px; }
-    .flex.spaced.column > *:last-child, .fl.spaced.column > *:last-child {
+    .sf.spaced.column > *:last-child {
       margin-bottom: 0; }
-  .flex .f1, .fl .f1 {
+  .sf .c1 {
     flex: 1; }
-  .flex .f2, .fl .f2 {
+  .sf .c2 {
     flex: 2; }
-  .flex .f3, .fl .f3 {
+  .sf .c3 {
     flex: 3; }
-  .flex .f4, .fl .f4 {
+  .sf .c4 {
     flex: 4; }
+  .sf .c5 {
+    flex: 5; }
+  .sf .c6 {
+    flex: 6; }
+  .sf .c7 {
+    flex: 7; }
+  .sf .c8 {
+    flex: 8; }
+  .sf .c9 {
+    flex: 9; }
+  .sf .c10 {
+    flex: 10; }
+  .sf .c11 {
+    flex: 11; }
+  .sf .c12 {
+    flex: 12; }
 
-/*# sourceMappingURL=flex.css.map */
+/*# sourceMappingURL=simple-flex.css.mapcss.map */
