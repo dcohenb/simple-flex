@@ -1,6 +1,6 @@
 {
   "name": "simple-flex",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Simple utility for advanced web layouts using flex",
   "main": "simple-flex.css",
   "scripts": {
