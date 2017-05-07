@@ -54,16 +54,16 @@
 
   &.spaced {
     > * {
-      margin-left: 10px;
+      margin-right: 10px;
       &:last-child {
-        margin-left: 0;
+        margin-right: 0;
       }
     }
 
     &.rtl {
       > * {
-        margin-left: 0;
-        margin-right: 10px;
+        margin-right: 0;
+        margin-left: 10px;
         &:last-child {
           margin-left: 0;
         }
@@ -72,7 +72,7 @@
 
     &.column {
       > * {
-        margin-left: 0;
+        margin-right: 0;
         margin-bottom: 10px;
         &:last-child {
           margin-bottom: 0;

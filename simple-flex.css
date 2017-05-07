@@ -77,16 +77,16 @@
     align-items: flex-end;
     justify-content: space-around; }
   .sf.spaced > * {
-    margin-left: 10px; }
-    .sf.spaced > *:last-child {
-      margin-left: 0; }
-  .sf.spaced.rtl > * {
-    margin-left: 0;
     margin-right: 10px; }
+    .sf.spaced > *:last-child {
+      margin-right: 0; }
+  .sf.spaced.rtl > * {
+    margin-right: 0;
+    margin-left: 10px; }
     .sf.spaced.rtl > *:last-child {
       margin-left: 0; }
   .sf.spaced.column > * {
-    margin-left: 0;
+    margin-right: 0;
     margin-bottom: 10px; }
     .sf.spaced.column > *:last-child {
       margin-bottom: 0; }
@@ -115,4 +115,4 @@
   .sf .c12 {
     flex: 12; }
 
-/*# sourceMappingURL=simple-flex.css.mapcss.map */
+/*# sourceMappingURL=simple-flex.css.map */
