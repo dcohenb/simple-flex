@@ -135,6 +135,17 @@ works for flex row or column
 
 
 
+## Text Alignment
+
+Simple text alignment helpers are also available
+```html
+<div class="ta l">left</div>
+<div class="ta c">center</div>
+<div class="ta r">right</div>
+```
+
+
+
 ## Installation
 Simply import the css file to your project and start using Simple flex
 ```html

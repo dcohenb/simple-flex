@@ -13,10 +13,9 @@
     flex-wrap: wrap;
   }
 
-
-  /************
-    Alignment
-  ************/
+  /*******************/
+  //    Flex Layout
+  /*******************/
 
   // Basics
   &.t {align-items: flex-start;}
@@ -48,13 +47,13 @@
   &.bsa {align-items: flex-end; justify-content: space-around;}
 
 
-  /************
-    Spaced elements
-  ************/
+  /*******************/
+  // Spaced elements
+  /*******************/
 
   &.spaced {
     > * {
-      margin-right: 10px;
+      margin: 0 10px 0 10px;
       &:last-child {
         margin-right: 0;
       }
@@ -62,8 +61,7 @@
 
     &.rtl {
       > * {
-        margin-right: 0;
-        margin-left: 10px;
+        margin: 0 0 0 10px;
         &:last-child {
           margin-left: 0;
         }
@@ -72,22 +70,29 @@
 
     &.column {
       > * {
-        margin-right: 0;
-        margin-bottom: 10px;
+        margin: 0 0 10px;
         &:last-child {
           margin-bottom: 0;
         }
       }
     }
   }
+}
 
-
-  /************
-    columns
-  ************/
-  @for $i from 1 through 12 {
-    .c#{$i} {
-      flex: $i;
-    }
+/*******************/
+//     Columns
+/*******************/
+@for $i from 1 through 12 {
+  .c#{$i} {
+    flex: $i;
   }
+}
+
+/*******************/
+//  Text Alignment
+/*******************/
+.ta {
+  &.l { text-align: left; }
+  &.c { text-align: center; }
+  &.r { text-align: right; }
 }
