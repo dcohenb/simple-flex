@@ -1,3 +1,6 @@
+/*******************/
+//  SF - Simple Flex
+/*******************/
 .sf {
   display: flex;
 
@@ -45,39 +48,8 @@
   &.msa {align-items: center; justify-content: space-around;}
   &.bsb {align-items: flex-end; justify-content: space-between;}
   &.bsa {align-items: flex-end; justify-content: space-around;}
-
-
-  /*******************/
-  // Spaced elements
-  /*******************/
-
-  &.spaced {
-    > * {
-      margin: 0 10px 0 10px;
-      &:last-child {
-        margin-right: 0;
-      }
-    }
-
-    &.rtl {
-      > * {
-        margin: 0 0 0 10px;
-        &:last-child {
-          margin-left: 0;
-        }
-      }
-    }
-
-    &.column {
-      > * {
-        margin: 0 0 10px;
-        &:last-child {
-          margin-bottom: 0;
-        }
-      }
-    }
-  }
 }
+
 
 /*******************/
 //     Columns
@@ -88,11 +60,48 @@
   }
 }
 
+
 /*******************/
-//  Text Alignment
+//  SA - Simple Alignment
 /*******************/
-.ta {
+.sa {
   &.l { text-align: left; }
   &.c { text-align: center; }
   &.r { text-align: right; }
+}
+
+
+/*******************/
+//  SS - Simple Spacing
+/*******************/
+$ss-sizes: (
+  xs: 0.6rem,
+  sm: 0.8rem,
+  md: 1rem,
+  lg: 1.2rem,
+  xl: 1.4rem
+);
+
+.ss {
+  @each $size, $val in $ss-sizes {
+    .margin-all-#{$size} { margin: $val; }
+    .padding-all-#{$size} { padding: $val; }
+  }
+
+  @each $size, $val in $ss-sizes {
+    .margin-tb-#{$size} { margin-top: $val; margin-bottom: $val; }
+    .padding-tb-#{$size} { padding-top: $val; padding-bottom: $val; }
+  }
+
+  @each $size, $val in $ss-sizes {
+    .margin-rl-#{$size} { margin-right: $val; margin-left: $val; }
+    .padding-rl-#{$size} { padding-right: $val; padding-left: $val; }
+  }
+
+  @each $side in top right bottom left {
+    @each $size, $val in $ss-sizes {
+      .margin-#{$side}-#{$size} { margin-#{$side}: $val; }
+      .padding-#{$side}-#{$size} { padding-#{$side}: $val; }
+    }
+  }
 }

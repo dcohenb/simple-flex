@@ -117,24 +117,6 @@ Simple flex has support for basic grids, it has an optional 12 columns grid, use
 
 
 
-## Spacing
-
-Use the `spacing` class to add spacing between the element in the container.
-works for flex row or column
-```html
-<div class="sf spacing msb">
-    <div>left</div>
-    <div>right</div>
-</div>
-<div class="sf column spacing mc">
-    <div>left</div>
-    <div>center</div>
-    <div>right</div>
-</div>
-```
-
-
-
 ## Text Alignment
 
 Simple text alignment helpers are also available
@@ -146,8 +128,40 @@ Simple text alignment helpers are also available
 
 
 
+## Spacing
+
+Simple Spacing for elements
+```html
+Avilable spacing modes:
+    margin / padding
+
+Built in sizes:
+    xs: 0.6rem
+    sm: 0.8rem
+    md: 1rem
+    lg: 1.2rem
+    xl: 1.4rem
+
+sides:
+    all / top / right / bottom / left / tb (top bottom) / rl (right left)
+
+example:
+    <div class="ss padding-all-sm">small padding from all sides</div>
+    <div class="ss margin-rl-xs">extra small margin from left and right</div>
+    <div class="ss padding-top-xs padding-bottom-small">extra small padding from top and small from bottom</div>
+```
+
+
+
 ## Installation
 Simply import the css file to your project and start using Simple flex
 ```html
 <link rel="stylesheet" href="//rawgit.com/dcohenb/simple-flex/master/simple-flex.css">
 ```
+
+
+
+## License
+MIT
+
+Copyright (c) 2017-present, Daniel Cohen
