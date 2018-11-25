@@ -163,7 +163,7 @@ Development:
 <link rel="stylesheet" href="//cdn.jsdelivr.net/gh/dcohenb/simple-flex@master/dist/simple-flex.css">
 
 Production: 
-<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/dcohenb/simple-flex@0.1.0/dist/simple-flex.css">
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/dcohenb/simple-flex@v0.1.1/dist/simple-flex.css">
 ```
 
 
