@@ -121,9 +121,9 @@ Simple flex has support for basic grids, it has an optional 12 columns grid, use
 
 Simple text alignment helpers are also available
 ```html
-<div class="ta l">left</div>
-<div class="ta c">center</div>
-<div class="ta r">right</div>
+<div class="sa-left">left</div>
+<div class="sa-center">center</div>
+<div class="sa-right">right</div>
 ```
 
 
@@ -132,23 +132,26 @@ Simple text alignment helpers are also available
 
 Simple Spacing for elements
 ```html
-Avilable spacing modes:
+Available spacing modes:
     margin / padding
 
 Built in sizes:
-    xs: 0.6rem
-    sm: 0.8rem
+    none: 0rem
+    xs: 0.333rem
+    sm: 0.666rem
     md: 1rem
-    lg: 1.2rem
-    xl: 1.4rem
+    lg: 1.333rem
+    xl: 1.666rem
+    xxl: 2rem
 
 sides:
-    all / top / right / bottom / left / tb (top bottom) / rl (right left)
+    all / top / right / bottom / left / tb (top & bottom) / lr (left & right)
 
 example:
-    <div class="ss padding-all-sm">small padding from all sides</div>
-    <div class="ss margin-rl-xs">extra small margin from left and right</div>
-    <div class="ss padding-top-xs padding-bottom-small">extra small padding from top and small from bottom</div>
+    <div class="padding-all-sm">small padding from all sides</div>
+    <div class="margin-lr-xs">extra small margin from left and right</div>
+    <div class="padding-top-xs padding-bottom-small">extra small padding from top and small from bottom</div>
+    <div class="margin-children-all-xs">Gives all direct children BUT THE LAST spacing</div>
 ```
 
 
@@ -156,7 +159,11 @@ example:
 ## Installation
 Simply import the css file to your project and start using Simple flex
 ```html
-<link rel="stylesheet" href="//rawgit.com/dcohenb/simple-flex/master/simple-flex.css">
+Development: 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/dcohenb/simple-flex@master/dist/simple-flex.css">
+
+Production: 
+<link rel="stylesheet" href="//cdn.jsdelivr.net/gh/dcohenb/simple-flex@0.1.0/dist/simple-flex.css">
 ```
 
 

@@ -4,7 +4,8 @@
   "description": "Simple utility for advanced web layouts using flex",
   "main": "simple-flex.css",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "sass simple-flex.scss:dist/simple-flex.css --style=expanded && sass simple-flex.scss:dist/simple-flex.min.css --style=compressed --source-map"
   },
   "repository": {
     "type": "git",

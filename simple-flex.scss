@@ -62,46 +62,41 @@
 
 
 /*******************/
-//  SA - Simple Alignment
+//  SA - Simple Align
 /*******************/
-.sa {
-  &.l { text-align: left; }
-  &.c { text-align: center; }
-  &.r { text-align: right; }
-}
+.sa-left { text-align: left; }
+.sa-center { text-align: center; }
+.sa-right { text-align: right; }
 
 
 /*******************/
-//  SS - Simple Spacing
+//  Spacing
 /*******************/
-$ss-sizes: (
-  xs: 0.6rem,
-  sm: 0.8rem,
+$spacing: (
+  none: 0rem,
+  xs: 0.333rem,
+  sm: 0.666rem,
   md: 1rem,
-  lg: 1.2rem,
-  xl: 1.4rem
+  lg: 1.333rem,
+  xl: 1.666rem,
+  xxl: 2rem
 );
 
-.ss {
-  @each $size, $val in $ss-sizes {
-    .margin-all-#{$size} { margin: $val; }
-    .padding-all-#{$size} { padding: $val; }
-  }
+$sides: top, right, bottom, left;
+$properties: padding, margin;
 
-  @each $size, $val in $ss-sizes {
-    .margin-tb-#{$size} { margin-top: $val; margin-bottom: $val; }
-    .padding-tb-#{$size} { padding-top: $val; padding-bottom: $val; }
-  }
+@each $property in $properties {
+  @each $size, $val in $spacing {
+    .#{$property}-all-#{$size} { #{$property}: $val; }
+    .#{$property}-tb-#{$size} { #{$property}-top: $val; #{$property}-bottom: $val; }
+    .#{$property}-lr-#{$size} { #{$property}-left: $val; #{$property}-right: $val; }
+    .#{$property}-children-all-#{$size} { > *:not(:last-child) { #{$property}: $val; } }
+    .#{$property}-children-tb-#{$size} { > *:not(:last-child) { #{$property}-top: $val; #{$property}-bottom: $val; } }
+    .#{$property}-children-lr-#{$size} { > *:not(:last-child) { #{$property}-left: $val; #{$property}-right: $val; } }
 
-  @each $size, $val in $ss-sizes {
-    .margin-rl-#{$size} { margin-right: $val; margin-left: $val; }
-    .padding-rl-#{$size} { padding-right: $val; padding-left: $val; }
-  }
-
-  @each $side in top right bottom left {
-    @each $size, $val in $ss-sizes {
-      .margin-#{$side}-#{$size} { margin-#{$side}: $val; }
-      .padding-#{$side}-#{$size} { padding-#{$side}: $val; }
+    @each $side in $sides {
+      .#{$property}-#{$side}-#{$size} { #{$property}-#{$side}: $val; }
+      .#{$property}-children-#{$side}-#{$size} { > *:not(:last-child) { #{$property}-#{$side}: $val; } }
     }
   }
 }
